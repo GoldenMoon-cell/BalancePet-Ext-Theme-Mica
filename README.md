@@ -1,5 +1,7 @@
 # BalancePet Mica
 
+[English](README.en.md)
+
 BalancePet 的系统云母主题插件，类型为 `theme`，目录分类为 `主题 / 外观`。
 
 - Windows 11：支持 Mica 与 Mica Alt 窗口材质。
@@ -23,3 +25,4 @@ BalancePet 的系统云母主题插件，类型为 `theme`，目录分类为 `�
 ## 📜 许可证
 
 MIT
+
