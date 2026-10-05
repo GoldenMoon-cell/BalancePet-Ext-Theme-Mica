@@ -1,0 +1,14 @@
+{
+  "id": "balancepet.theme.acrylic",
+  "type": "theme",
+  "name": "BalancePet 亚克力",
+  "name_en": "BalancePet Acrylic",
+  "version": "1.0.0",
+  "api_version": 1,
+  "min_core_version": "1.0.0",
+  "theme_file": "theme.json",
+  "author": "GoldenMoon-cell",
+  "update_url": "https://api.github.com/repos/GoldenMoon-cell/BalancePet-Themes/releases/latest",
+  "description": "为系统亚克力材质设计的通透配色：低不透明度表面、明亮描边与更深的分层阴影。",
+  "description_en": "A translucent palette built for the system acrylic material: low-opacity surfaces, bright edges, and stronger layering shadows."
+}
