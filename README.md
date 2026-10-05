@@ -1,28 +1,25 @@
-# BalancePet Mica
+# BalancePet 主题仓库
 
-[English](README.en.md)
+BalancePet 的**主题**都在这里：一个主题一个目录，打包后挂在本仓库的 Releases 上，`catalog.json` 是它们的目录。
 
-BalancePet 的系统云母主题插件，类型为 `theme`，目录分类为 `主题 / 外观`。
+| 主题 | 材质 | 说明 |
+| --- | --- | --- |
+| [BalancePet 云母](themes/balancepet-mica) | 云母 / 云母 Alt / 实色 | 系统云母底层、Fluent 控件与青绿色强调色 |
+| [BalancePet 亚克力](themes/balancepet-acrylic) | 亚克力 / 实色 | 为亚克力设计的通透配色：低不透明度表面、明亮描边、更强的分层阴影 |
 
-- Windows 11：支持 Mica 与 Mica Alt 窗口材质。
-- Windows 10：使用 Acrylic 效果，并在系统不支持时回退到主题实色。
-- 深色与浅色模式：分别提供高对比度文字、控件和边框颜色。
-- 安全边界：插件只包含声明式 JSON，不加载 XAML、程序集或脚本。
+## 安装
 
-## ▶️ 安装
+1. 从 [Releases](https://github.com/GoldenMoon-cell/BalancePet-Themes/releases) 下载 `balancepet.theme.<名字>-<版本>.zip`
+2. 在「设置 → 外观」**导入主题 ZIP**，或把 ZIP 拖到「设置 → 扩展」页面
+3. 在「设置 → 外观」的**当前主题**里选中它
 
-1. 从 [Releases](https://github.com/GoldenMoon-cell/BalancePet-Ext-Theme-Mica/releases) 下载 `balancepet.theme.mica-1.0.0.zip`。
-2. 在 BalancePet 的“设置 > 扩展”页面导入 ZIP，或从在线插件库直接安装。
-3. 在“设置 > 外观”中选择 `BalancePet 云母`。
+需要 BalancePet **1.0.0** 或更高版本。材质由宿主调用系统接口实现，主题只声明它支持哪几种。
 
-需要 BalancePet `1.0.0` 或更高版本。
+## 自己做一个
 
-## 📁 文件
+复制 `themes/balancepet-mica` 当起点，改 `manifest.json` 的 `id` 与名称、改 `theme.json` 的配色，然后跑 `tools/package-theme-extension.ps1`。
+颜色是 `#RRGGBB` 或 `#AARRGGBB`；`backdrops` 声明支持哪些材质（`mica`／`mica-alt`／`acrylic`／`solid`），宿主只给用户列出这些，`solid` 始终可用作回退。
 
-- `manifest.json`：插件身份、版本和更新地址。
-- `theme.json`：Mica/Acrylic 材质偏好与浅色、深色设计令牌。
-
-## 📜 许可证
+## 许可证
 
 MIT
-

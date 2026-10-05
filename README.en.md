@@ -1,28 +1,24 @@
-# BalancePet Mica
+# BalancePet themes
 
-The system material theme extension for BalancePet. Type `theme`, listed under
-**Themes / Appearance**.
+Every BalancePet **theme** lives here: one directory per theme, packaged and attached to this repository's releases, with `catalog.json` as their catalogue.
 
-- Windows 11: Mica and Mica Alt window materials.
-- Windows 10: Acrylic, falling back to a solid themed colour where the system has neither.
-- Dark and light: separate high-contrast text, control and border colours for each.
-- Safety: the extension is declarative JSON only. No XAML, assemblies or scripts.
+| Theme | Materials | Notes |
+| --- | --- | --- |
+| [BalancePet Mica](themes/balancepet-mica) | Mica / Mica Alt / Solid | System Mica, Fluent controls, teal accent |
+| [BalancePet Acrylic](themes/balancepet-acrylic) | Acrylic / Solid | Translucent palette built for acrylic: low-opacity surfaces, bright edges, stronger shadows |
 
 ## Installing
 
-1. Download `balancepet.theme.mica-1.0.0.zip` from
-   [Releases](https://github.com/GoldenMoon-cell/BalancePet-Ext-Theme-Mica/releases).
-2. Import the ZIP in BalancePet, under **Settings → Extensions**, or install it from the
-   online library.
-3. Choose `BalancePet 云母` under **Settings → Appearance**.
+1. Download a theme from [Releases](https://github.com/GoldenMoon-cell/BalancePet-Themes/releases)
+2. Import the ZIP under Settings - Appearance, or drop it on Settings - Extensions
+3. Choose it under Settings - Appearance - Current theme
 
-Requires BalancePet `1.0.0` or later.
+Requires BalancePet **1.0.0** or newer. The host applies the material through Windows APIs; a theme only declares which materials it supports.
 
-## Files
+## Building one
 
-- `manifest.json` -- the extension's identity, version and update address.
-- `theme.json` -- the material preference and the light and dark design tokens.
+Copy `themes/balancepet-mica`, change the `id` and names in `manifest.json`, change the colours in `theme.json`, then run `tools/package-theme-extension.ps1`. Colours are `#RRGGBB` or `#AARRGGBB`; `backdrops` lists the supported materials, and `solid` is always available as the fallback.
 
-## Licence
+## License
 
 MIT
