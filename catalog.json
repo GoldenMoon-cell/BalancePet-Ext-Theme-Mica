@@ -1,7 +1,9 @@
 {
+  "catalog": "balancepet-themes",
   "schema_version": 1,
   "themes": [
     {
+  "catalog": "balancepet-themes",
       "id": "balancepet.theme.mica",
       "type": "theme",
       "name": "BalancePet 云母",
@@ -20,6 +22,7 @@
       "categories": ["主题", "外观"]
     },
     {
+  "catalog": "balancepet-themes",
       "id": "balancepet.theme.acrylic",
       "type": "theme",
       "name": "BalancePet 亚克力",
